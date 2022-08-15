@@ -15,6 +15,9 @@ import AboutUs from './Components/Pages/AboutUs';
 import Contact from './Components/Pages/Contact';
 import Service from './Components/Pages/Service';
 import MakeAppointment from './Components/Pages/MakeAppointment';
+import Terms_condition from './Components/Terms_condition';
+import Privacy_Policy from './Components/Privacy_Policy';
+import ServiceDetails from './Components/Pages/ServiceDetails';
 
 const App = () => {
   return (
@@ -26,10 +29,13 @@ const App = () => {
         <Route path="contact" exact element={<Contact />} />
         <Route path="service" exact element={<Service />} />
         <Route path="make-appointment" exact element={<MakeAppointment />} />
+        <Route path="terms-conditions" exact element={<Terms_condition />} />
+        <Route path="privacy-policy" exact element={<Privacy_Policy />} />
+        <Route path="/service-detail" exact element={<ServiceDetails />} />
       </Routes>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <GetAQuote />
-      <Brand />
+      {/* <Brand /> */}
       <Footer />
     </>
   );

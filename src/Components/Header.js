@@ -1,5 +1,5 @@
-import React, { useState, Component }  from 'react';
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, Component } from 'react';
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Header = () => {
 
@@ -11,38 +11,44 @@ const Header = () => {
         { id: 4, name: "Contact", to: "/contact" },
     ]
     const [active, setActive] = useState(null);
-    
+
+    let navigate = useNavigate();
+
+    function changeLocation(placeToGo) {
+        navigate(placeToGo, { replace: true });
+        window.location.reload();
+    }
+
     return (
         <>
             <header id="default_header" className="header_style_1">
-                <div className="header_top">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-8">
-                                <div className="full">
-                                    <div className="topbar-left">
-                                        <ul className="list-inline">
-                                            {/* <li> <span className="topbar-label"><i className="fa  fa-home"></i></span> <span className="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li> */}
-                                            <li> <span className="topbar-label"><i className="fa fa-envelope-o"></i></span> <span className="topbar-hightlight"><a href="mailto:info@greenboxservices.com">info@greenboxservices.com</a></span> </li>
+                <div class="header_top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="header-full">
+                                    <div class="topbar-left">
+                                        <ul class="list-inline">
+                                            {/* <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">540 Lorem Ipsum New York, AB 90218</span> </li> */}
+                                            <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4 right_section_header_top">
-                                <div className="float-left">
-                                    <div className="social_icon">
-                                        <ul className="list-inline">
-                                            <li><a className="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
-                                            <li><a className="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
-                                            <li><a className="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
-                                            <li><a className="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
-                                            <li><a className="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                            <div class="col-md-4 right_section_header_top">
+                                <div class="float-left">
+                                    <div class="social_icon">
+                                        <ul class="list-inline">
+                                            <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                                            <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                                            <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                                            <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                                            <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="float-right">
-                                    <div className="make_appo">
-                                    <Link className="btn white_btn" to="/make-appointment">Make Appointment</Link> </div>
+                                <div class="float-right">
+                                    <div class="make_appo"> <a class="btn white_btn" href="make_appointment.html">Make Appointment</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -52,16 +58,18 @@ const Header = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                                <div className="logo"> <a href="it_home.html"><img src="images/logos/FotoJet.png" alt="logo" /></a> </div>
+                                <div className="logo"> <Link to='/' onClick="/"><img src="images/logos/Logo-high-q_500x300.jpg" alt="logo" /></Link> </div>
                             </div>
                             <div className="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                                 <div className="menu_side">
                                     <div id="navbar_menu">
                                         <ul className="first-ul">
                                             {navBarLinks.map((link) => (
-                                                <li >
-                                                    <Link onClick={() => setActive(link.name)} class={active == link.name ? "active" : ''} to={link.to}>{link.name}</Link>
+                                                <li key={link.name}>
+                                                    {/* <Link onClick={() => changeLocation(link.to)} className={active == link.name ? "active" : ''}  >{link.name}</Link> */}
+                                                    {/* <Link onClick={() => setActive(link.name)} className={active == link.name ? "active" : ''} to={link.to} >{link.name}</Link> */}
 
+                                                    <Link to={link.to} onClick={() => changeLocation(link.to)} className={active == link.name ? "active" : ''}>{link.name}</Link>
                                                 </li>
                                             ))}
                                         </ul>

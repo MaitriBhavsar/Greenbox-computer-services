@@ -1,21 +1,26 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
 import ServiceProcess from '../ServiceProcess';
 import StaffMembers from '../Staff';
+import { Helmet } from "react-helmet";
 
 function Service() {
     return (
         <>
-            <div id="inner_banner" class="section inner_banner_section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="full">
-                                <div class="title-holder">
-                                    <div class="title-holder-cell text-left">
-                                        <h1 class="page-title">Services</h1>
-                                        <ol class="breadcrumb">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>GreenBox Services | Service</title>
+            </Helmet>
+            <div id="inner_banner" className="section inner_banner_section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="full">
+                                <div className="title-holder">
+                                    <div className="title-holder-cell text-left">
+                                        <h1 className="page-title">Services</h1>
+                                        <ol className="breadcrumb">
                                             <li><a href="index.html">Home</a></li>
-                                            <li class="active">Services</li>
+                                            <li className="active">Services</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -25,37 +30,70 @@ function Service() {
                 </div>
             </div>
             <ServiceProcess />
-           
-            <div class="section padding_layout_1 light_silver service_list">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 service_blog">
-                            <div class="full">
-                                <div class="service_img"> <img class="img-responsive" src="images/it_service/post-01.jpg" alt="#" /> </div>
-                                <div class="service_cont">
-                                    <h3 class="service_head">Data recovery</h3>
+
+            <div className="section padding_layout_1 light_silver service_list">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-01.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">Data backup and recovery</h3>
                                     <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                    <div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 service_blog">
-                            <div class="full">
-                                <div class="service_img"> <img class="img-responsive" src="images/it_service/post-02.jpg" alt="#" /> </div>
-                                <div class="service_cont">
-                                    <h3 class="service_head">Computer repair</h3>
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-02.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">Computer repair</h3>
                                     <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                    <div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 service_blog">
-                            <div class="full">
-                                <div class="service_img"> <img class="img-responsive" src="images/it_service/post-03.jpg" alt="#" /> </div>
-                                <div class="service_cont">
-                                    <h3 class="service_head">Network solutions</h3>
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-03.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">Biometric and security systems</h3>
                                     <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                    <div class="bt_cont"> <a class="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-03.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">CCTV and networking solutions</h3>
+                                    <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-03.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">Computer & laptop sells and service</h3>
+                                    <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-md-4 service_blog">
+                            <div className="full">
+                                <div className="service_img"> <img className="img-responsive" src="images/it_service/post-03.jpg" alt="#" /> </div>
+                                <div className="service_cont">
+                                    <h3 className="service_head">Malware and virus removal</h3>
+                                    <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    <div className="bt_cont"> <a className="btn sqaure_bt" href="it_service_detail.html">View Service</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +101,7 @@ function Service() {
                 </div>
             </div>
 
-           <StaffMembers />
+            <StaffMembers />
         </>
     )
 }

@@ -399,6 +399,14 @@ p {
 	line-height: 21px;
 }
 
+p.text-error.form-err {
+    color: red;
+}
+
+p.error-message.form-err {
+    color: red;
+}
+
 p.large {
 	color: #898989;
 	font-size: 20px;
@@ -506,7 +514,14 @@ a:focus {
 	width: 100%;
 	float: left;
 	margin: 0;
-	padding: 0;
+	padding: 20px;
+}
+
+.header-full {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0px;
 }
 
 .top_80 {
@@ -1581,7 +1596,7 @@ body.light_blue #full_slider.full_slider_inner {
 	-------------------------------------------------------------------*/
 
 .padding_layout_1 {
-	padding-top: 120px;
+	padding-top: 90px;
 	padding-bottom: 115px;
 }
 
@@ -2192,7 +2207,8 @@ input.field_custom {
 	border-radius: 0px;
 	margin-bottom: 10px;
 	font-size: 14px;
-	color: #737373;
+	color: hsl(0, 0%, 45%);
+	margin-bottom: 6px;
 }
 
 textarea.field_custom {
@@ -2206,8 +2222,28 @@ textarea.field_custom {
 	margin-bottom: 10px;
 	font-size: 14px;
 	color: #737373;
+	margin-bottom: 6px;
 }
 
+.PhoneInput {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+input#phone-input {
+    border: solid #e1e1e1 1px;
+    width: 100%;
+    background: #f8f8f8;
+    min-height: 50px;
+    padding: 5px 20px;
+    line-height: normal;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: hsl(0, 0%, 45%);
+    margin-bottom: 6px;
+}
 .field {
 	padding: 0 5px;
 }

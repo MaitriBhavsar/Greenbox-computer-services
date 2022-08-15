@@ -21,7 +21,7 @@ const ChooseService = () => {
                                 <div className="icon"> <img src="images/it_service/i1.png" alt="#" /> </div>
                             </div>
                             <h4 className="theme_color">Data recovery</h4>
-                            <p>Perspiciatis eos quos totam cum minima aut!</p>
+                            <p>Seattled data & hard drive recovery for computers and laptops!</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -30,7 +30,7 @@ const ChooseService = () => {
                                 <div className="icon"> <img src="images/it_service/i2.png" alt="#" /> </div>
                             </div>
                             <h4 className="theme_color">Computer repair</h4>
-                            <p>Perspiciatis eos quos totam cum minima aut!</p>
+                            <p>Our team can repair all windows and linux desktop and laptop products!</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -38,8 +38,8 @@ const ChooseService = () => {
                             <div className="center">
                                 <div className="icon"> <img src="images/it_service/i3.png" alt="#" /> </div>
                             </div>
-                            <h4 className="theme_color">Mobile service</h4>
-                            <p>Perspiciatis eos quos totam cum minima aut!</p>
+                            <h4 className="theme_color">Backup service</h4>
+                            <p>We can help protect your valuable data with customized cloud backup solutions!</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -47,12 +47,12 @@ const ChooseService = () => {
                             <div className="center">
                                 <div className="icon"> <img src="images/it_service/i4.png" alt="#" /> </div>
                             </div>
-                            <h4 className="theme_color">Network solutions</h4>
-                            <p>Perspiciatis eos quos totam cum minima aut!</p>
+                            <h4 className="theme_color">Hard drive clone</h4>
+                            <p>One of the best ways to improve the performance of an older computer is to replace the hard drive with SSD!</p>
                         </div>
                     </div>
                 </div>
-                <div className="row" style={{marginTop: "35px"}}>
+                {/* <div className="row" style={{marginTop: "35px"}}>
                     <div className="col-md-8">
                         <div className="full margin_bottom_30">
                             <div className="accordion border_circle">
@@ -119,7 +119,7 @@ const ChooseService = () => {
                             <p><a className="btn main_bt" href="#">Read More</a></p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )

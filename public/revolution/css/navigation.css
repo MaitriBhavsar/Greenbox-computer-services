@@ -2287,7 +2287,7 @@ website:    http://www.themepunch.com
 -----------------------------------------------------------------------------*/
 /* ARROWS */
 .zeus.tparrows {
-  cursor:pointer;
+  /* cursor:pointer;
   min-width:70px;
   min-height:70px;
   position:absolute;
@@ -2295,7 +2295,7 @@ website:    http://www.themepunch.com
   z-index:100;
   border-radius:35px;   
   overflow:hidden;
-  background:rgba(0,0,0,0.10);
+  background:rgba(0,0,0,0.10); */
 }
 
 .zeus.tparrows:before {

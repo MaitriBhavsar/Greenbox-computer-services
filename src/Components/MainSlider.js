@@ -1,4 +1,6 @@
-import React, { Component }  from 'react';
+import React, { Component } from 'react';
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const MainSlider = () => {
     return (
@@ -6,11 +8,11 @@ const MainSlider = () => {
             <div id="slider" className="section main_slider">
                 <div className="container-fuild">
                     <div className="row">
-                        <div id="rev_slider_4_1_wrapper" className="rev_slider_wrapper fullwidthbanner-container app-banner" data-alias="classNameicslider1">
-                            <div id="rev_slider_4_1" className="rev_slider fullwidthabanner" style={{ display: "none" }} data-version="5.0.7">
+                        <div id="rev_slider_4_1_wrapper" className="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style={{margin:"0px auto",backgroundColor:"transparent",padding:"0px",marginTop:"0px",marginBottom:"0px"}}>
+                            <div id="rev_slider_4_1" className="rev_slider fullwidthabanner" style={{display:"none"}} data-version="5.0.7">
                                 <ul>
                                     <li data-index="rs-1812" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/it_service/slide1.jpg" data-rotate="0" data-saveperformance="off" data-title="Computer Services" data-description="">
-                                        <img src="images/it_service/modern-prodigy-disassembling-electronics.jpg" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
+                                        <img src="images/it_service/slide1.jpg" alt="#" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
                                         <div className="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
                                             id="slide-270-layer-1012"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -25,7 +27,7 @@ const MainSlider = () => {
                                             data-basealign="slide"
                                             data-responsive_offset="on"
                                             data-responsive="off"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(0, 0, 0, 0.25)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(0, 0, 0, 0.25)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-912"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -40,7 +42,7 @@ const MainSlider = () => {
                                             data-mask_out="x:inherit;y:inherit;"
                                             data-start="2000"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(29, 29, 29, 0.85)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(29, 29, 29, 0.85)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-112"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -60,7 +62,7 @@ const MainSlider = () => {
                                             data-splitout="none"
                                             data-responsive_offset="on"
                                             data-elementdelay="0.05"
-                                            style={{ zIndex: "6", whiteSpace: "nowrap" }}>Computer Services </div>
+                                            style={{zIndex: "6", whiteSpace: "nowrap"}}>Computer Services </div>
                                         <div className="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-412"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -77,11 +79,10 @@ const MainSlider = () => {
                                             data-splitin="none"
                                             data-splitout="none"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "7", whiteSpace: "nowrap" }}> </div>
+                                            style={{zIndex: "7", whiteSpace: "nowrap"}}>Available On GreenBox Services </div>
                                     </li>
-
                                     <li data-index="rs-181" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/it_service/slide2.jpg" data-rotate="0" data-saveperformance="off" data-title="Easy To Use & Customize" data-description="">
-                                        <img src="images/it_service/backup-cloud-storage-data-information-concept.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
+                                        <img src="images/it_service/slide2.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
                                         <div className="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
                                             id="slide-270-layer-101"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -96,7 +97,7 @@ const MainSlider = () => {
                                             data-basealign="slide"
                                             data-responsive_offset="on"
                                             data-responsive="off"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(0, 0, 0, 0.25)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(0, 0, 0, 0.25)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-91"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -111,7 +112,7 @@ const MainSlider = () => {
                                             data-mask_out="x:inherit;y:inherit;"
                                             data-start="2000"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(29, 29, 29, 0.85)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(29, 29, 29, 0.85)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-11"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -131,7 +132,7 @@ const MainSlider = () => {
                                             data-splitout="none"
                                             data-responsive_offset="on"
                                             data-elementdelay="0.05"
-                                            style={{ zIndex: "6", whiteSpace: "nowrap" }}>Fast & Affordable </div>
+                                            style={{zIndex: "6", whiteSpace: "nowrap"}}>Fast & Affordable </div>
                                         <div className="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-41"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -148,11 +149,10 @@ const MainSlider = () => {
                                             data-splitin="none"
                                             data-splitout="none"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "7", whiteSpace: "nowrap" }}>Available On It.Next </div>
+                                            style={{zIndex: "7", whiteSpace: "nowrap"}}>Available On GreenBox Services </div>
                                     </li>
-
                                     <li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="images/it_service/slide3.jpg" data-rotate="0" data-saveperformance="off" data-title="Perfectly Responsive" data-description="">
-                                        <img src="images/it_service/slide2.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
+                                        <img src="images/it_service/slide3.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" className="rev-slidebg" data-no-retina />
                                         <div className="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
                                             id="slide-270-layer-10"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -167,7 +167,7 @@ const MainSlider = () => {
                                             data-basealign="slide"
                                             data-responsive_offset="on"
                                             data-responsive="off"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(0, 0, 0, 0.25)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(0, 0, 0, 0.25)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-9"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -182,7 +182,7 @@ const MainSlider = () => {
                                             data-mask_out="x:inherit;y:inherit;"
                                             data-start="2000"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "5", backgroundColor: "rgba(29, 29, 29, 0.85)", borderColor: "rgba(0, 0, 0, 0.50)" }}> </div>
+                                            style={{zIndex: "5",backgroundColor:"rgba(29, 29, 29, 0.85)",borderColor:"rgba(0, 0, 0, 0.50)"}}> </div>
                                         <div className="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-1"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -202,7 +202,7 @@ const MainSlider = () => {
                                             data-splitout="none"
                                             data-responsive_offset="on"
                                             data-elementdelay="0.05"
-                                            style={{ zIndex: "6", whiteSpace: "nowrap" }}>We Will Fix It </div>
+                                            style={{zIndex: "6", whiteSpace: "nowrap"}}>We Will Fix It </div>
                                         <div className="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
                                             id="slide-18-layer-4"
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -219,9 +219,10 @@ const MainSlider = () => {
                                             data-splitin="none"
                                             data-splitout="none"
                                             data-responsive_offset="on"
-                                            style={{ zIndex: "7", whiteSpace: "nowrap" }}>Available On It.Next </div>
+                                            style={{zIndex: "7", whiteSpace: "nowrap"}}>Available On GreenBox Services </div>
                                     </li>
                                 </ul>
+                                <div className="tp-static-layers"></div>
                             </div>
                         </div>
                     </div>

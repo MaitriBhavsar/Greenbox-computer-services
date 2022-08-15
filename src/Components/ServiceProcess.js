@@ -22,11 +22,11 @@ const ServiceProcess = () => {
                                     <div className="service_blog_inner">
                                         <div className="icon text_align_left"><img src="images/it_service/si1_g.png" alt="#" /></div>
                                         <h4 className="service-heading">Fast service</h4>
-                                        <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
+                                        <p>We provide fast computer services that meet your needs as a main focus of our business.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            {/* <div className="col-md-4">
                                 <div className="full">
                                     <div className="service_blog_inner">
                                         <div className="icon text_align_left"><img src="images/it_service/si2_g.png" alt="#" /></div>
@@ -34,13 +34,13 @@ const ServiceProcess = () => {
                                         <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-md-4">
                                 <div className="full">
                                     <div className="service_blog_inner">
                                         <div className="icon text_align_left"><img src="images/it_service/si3_g.png" alt="#" /></div>
-                                        <h4 className="service-heading">Expert team</h4>
-                                        <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
+                                        <h4 className="service-heading">Expert Team</h4>
+                                        <p>Computer Experts Managed IT Services provides 24/7 monitoring</p>
                                     </div>
                                 </div>
                             </div>
@@ -49,11 +49,11 @@ const ServiceProcess = () => {
                                     <div className="service_blog_inner">
                                         <div className="icon text_align_left"><img src="images/it_service/si4_g.png" alt="#" /></div>
                                         <h4 className="service-heading">Affordable services</h4>
-                                        <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
+                                        <p>Providing local, affordable, friendly and fast computer repair services</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            {/* <div className="col-md-4">
                                 <div className="full">
                                     <div className="service_blog_inner">
                                         <div className="icon text_align_left"><img src="images/it_service/si5_g.png" alt="#" /></div>
@@ -70,7 +70,7 @@ const ServiceProcess = () => {
                                         <p>Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
